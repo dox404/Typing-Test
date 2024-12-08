@@ -81,3 +81,14 @@ align-items:center;
 .typing-text p span.active{
     color:orange;
 }
+
+.typing-text p span.correct{
+    color:green;
+}
+
+.typing-text p span.incorrect{
+    color:red;
+    outline:1px solid #fff;
+    background:#ffc0cb;
+    border-radius: 4px;
+}
