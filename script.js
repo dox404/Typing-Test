@@ -49,7 +49,7 @@ function initTyping() {
     const typedChar = input.value.charAt(charIndex)
     if (charIndex < char.length && timeLeft > 0) {
 
-        if(isTyping){
+        if(!isTyping){
             timer=setInterval(initTime,1000)
             isTyping = true
         }
@@ -66,6 +66,9 @@ function initTyping() {
         charIndex++
         char[charIndex].classList.add('active');
         mistakes.innerText=mistake;
+    }else{
+        clearInterval(timer)
+        input.value='';
     }
 }
 
@@ -75,6 +78,8 @@ function initTime(){
     if(timeLeft>0){
         timeLeft--;
         time.innerText=timeLeft;
+        let wpmVal=Math.round(((charIndex-mistake)/5)/(maxTime-timeLeft)*60)
+        wpm.innerText=wpmVal
     }else{
         clearInterval(timer)
     }
