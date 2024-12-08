@@ -29,6 +29,13 @@ border-radius:10px;
 border:1px solid #bfbfbf;
 
 }
+.wrapper .input-field{
+padding:13px 20px 0;
+opacity:0;
+position:absolute;
+z-index: -99;
+
+}
 
 .content-box .content{
     margin-top:17px;
@@ -91,4 +98,9 @@ align-items:center;
     outline:1px solid #fff;
     background:#ffc0cb;
     border-radius: 4px;
+}
+
+::selection{
+    color:#fff;
+    background:orange;
 }
