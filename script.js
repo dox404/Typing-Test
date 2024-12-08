@@ -66,6 +66,7 @@ function initTyping() {
         charIndex++
         char[charIndex].classList.add('active');
         mistakes.innerText=mistake;
+        cpm.innerText=charIndex-mistake
     }else{
         clearInterval(timer)
         input.value='';
@@ -85,5 +86,20 @@ function initTime(){
     }
 }
 
+function reset(){
+    loadParagraph()
+    clearInterval(timer);
+    timeLeft=maxTime;
+    time.innerText=timeLeft
+    input.value=''
+    charIndex=0;
+    mistake=0;
+    isTyping=false;
+    wpm.innerText=0
+    cpm.innerText=0
+    mistakes.innerText=0
+}
+
 input.addEventListener('input', initTyping)
+btn.addEventListener('click',reset)
 loadParagraph()
