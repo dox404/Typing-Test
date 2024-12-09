@@ -19,7 +19,7 @@ let isTyping = false;
 
 
 function loadParagraph() {
-    const paragraph = ["Accountability is a critical component of teamwork.", "Each team member must take responsibility for their actions, their contributions, and their impact on the team's overall performance.", "When everyone is accountable, the team can function smoothly, with everyone pulling their weight and working towards a common goal.", "Accountability also fosters trust, as team members know that they can rely on each other to fulfill their commitments.","Eenie, meenie, minie, mo, catch a piggy by the toe. If he hollers, let him go, eenie, meenie, minie, moe.Eenie, meenie, minie, mo, catch a tiger by the toe. If he hollers, let him go, eenie, meenie, minie, moe."]
+    const paragraph = ["Accountability is a critical component of teamwork.", "Each team member must take responsibility for their actions, their contributions, and their impact on the team's overall performance.", "When everyone is accountable, the team can function smoothly, with everyone pulling their weight and working towards a common goal.", "Accountability also fosters trust, as team members know that they can rely on each other to fulfill their commitments.","Eenie, meenie, minie, mo, catch a piggy by the toe. If he hollers, let him go, eenie, meenie, minie, moe.Eenie, meenie, minie, mo, catch a tiger by the toe. If he hollers, let him go, eenie, meenie, minie, moe.","Sahiba Ek Kutti aur Gawar H Mani Sabse best h"]
 
     const randomIndex = Math.floor(Math.random() * paragraph.length)
     typingText.innerHTML = ''
